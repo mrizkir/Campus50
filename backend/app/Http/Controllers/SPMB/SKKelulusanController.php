@@ -74,7 +74,7 @@ class SKKelulusanController extends Controller {
 			return Response()->json([
 				'status'=>0,
 				'pid'=>'fetchdata',                
-				'message'=>["Pembayaran PMB a.n ({$formuli->nama_mhs}) mohon di verifikasi terlebih dahulu."]
+				'message'=>["Pembayaran PMB a.n ({$formulir->nama_mhs}) mohon di verifikasi terlebih dahulu."]
 			], 422); 
 		}
 		else
