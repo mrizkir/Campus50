@@ -5,7 +5,7 @@
 								<span>
 									<v-img
 											max-width="400"
-											:src="$api.storageURL+'/storage/images/applogo.png'"
+											:src="$api.storageURL+'/images/applogo.png'"
 											>
 										</v-img>
 								</span>
@@ -127,7 +127,7 @@ export default {
 			var photo;
 			if (img == '')
 			{
-				photo = this.$api.storageURL+'/storage/images/users/no_photo.png';	
+				photo = this.$api.storageURL+'/images/users/no_photo.png';	
 			}
 			else
 			{

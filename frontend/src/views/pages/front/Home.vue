@@ -15,18 +15,18 @@
 					</v-carousel>-->
 					<v-img
 						class="hidden-sm-and-down"
-						:lazy-src="$api.storageURL + '/storage/images/sliders/banner3.jpg'"
+						:lazy-src="$api.storageURL + '/images/sliders/banner3.jpg'"
 						max-height="auto"
 						max-width="100%"
-						:src="$api.url + '/storage/images/sliders/banner3.jpg'"
+						:src="$api.storageURL + '/images/sliders/banner3.jpg'"
 					/>
 					<br />					
 					<v-img
 						class="hidden-sm-and-down"
-						:lazy-src="$api.storageURL + '/storage/images/sliders/banner5.jpg'"
+						:lazy-src="$api.storageURL + '/images/sliders/banner5.jpg'"
 						max-height="auto"
 						max-width="100%"
-						:src="$api.url + '/storage/images/sliders/banner5.jpg'"
+						:src="$api.storageURL + '/images/sliders/banner5.jpg'"
 					/>
 				</v-col>
 				<v-col cols="12" class="hidden-lg-and-up pa-0">
@@ -35,14 +35,14 @@
 						:lazy-src="$api.storageURL + 'storage/images/sliders/banner3.jpg'"
 						max-height="auto"
 						max-width="100%"
-						:src="$api.url + '/storage/images/sliders/banner3.jpg'"
+						:src="$api.storageURL + '/images/sliders/banner3.jpg'"
 					/>					
 					<v-img
 						class="hidden-lg-and-up"
-						:lazy-src="$api.storageURL + '/storage/images/sliders/banner5.jpg'"
+						:lazy-src="$api.storageURL + '/images/sliders/banner5.jpg'"
 						max-height="auto"
 						max-width="100%"
-						:src="$api.url + '/storage/images/sliders/banner5.jpg'"
+						:src="$api.storageURL + '/images/sliders/banner5.jpg'"
 					/>
 				</v-col>
 			</v-row>
@@ -56,7 +56,7 @@
 		data: () => ({
 			slides: [
 				{
-					src:"storage/images/sliders/banner1.jpg",
+					src:"images/sliders/banner1.jpg",
 				}
 			],
 		}),

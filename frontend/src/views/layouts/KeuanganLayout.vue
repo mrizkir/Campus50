@@ -382,7 +382,7 @@
 				let img = this.ATTRIBUTE_USER("foto");
 				var photo;
 				if (img == "") {
-					photo = this.$api.storageURL + "/storage/images/users/no_photo.png";
+					photo = this.$api.storageURL + "/images/users/no_photo.png";
 				} else {
 					photo = this.$api.storageURL + "/" + img;
 				}

@@ -7,7 +7,7 @@
 						<v-img
 							max-width="100%"
 							max-height="auto"
-							:src="$api.url + '/storage/images/gambar_login.jpg'"
+							:src="$api.storageURL + '/images/gambar_login.jpg'"
 						>
 						</v-img>
 					</v-card>

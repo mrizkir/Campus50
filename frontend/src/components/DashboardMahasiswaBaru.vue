@@ -14,7 +14,7 @@
 						<v-img
 							max-width="100%"
 							max-height="100%"
-							:src="$api.url + '/storage/images/petunjuk_pendaftaran.png'"
+							:src="$api.storageURL + '/images/petunjuk_pendaftaran.png'"
 						>
 						</v-img>
 					</v-card>

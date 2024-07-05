@@ -9,7 +9,7 @@
 							class="mt-3 mb-3"
 							max-width="400"
 							max-height="auto"
-							:src="$api.storageURL+'/storage/images/applogosuratkelulusan.png'"
+							:src="$api.storageURL+'/images/applogosuratkelulusan.png'"
 							>
 						</v-img>
 						<v-alert dense text color="primary" class="text-center">
