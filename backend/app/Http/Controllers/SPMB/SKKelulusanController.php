@@ -179,7 +179,7 @@ class SKKelulusanController extends Controller {
 				$file_pdf=Helper::public_path("exported/pdf/sklulus_".$surat_keluar->id.'.pdf');
 				$pdf->save($file_pdf);
 
-				$pdf_file="storage/exported/pdf/sklulus_".$surat_keluar->id.".pdf";
+				$pdf_file="exported/pdf/sklulus_".$surat_keluar->id.".pdf";
 
 				return Response()->json([
 					'status'=>1,

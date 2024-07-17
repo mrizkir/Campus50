@@ -198,7 +198,7 @@ class SoalPMBController extends Controller {
 					$gambar->move($folder,$file_name);    
 
 
-					$soal->gambar="storage/images/banksoal/$file_name";
+					$soal->gambar="images/banksoal/$file_name";
 					$soal->save();
 				}
 			}
@@ -208,7 +208,7 @@ class SoalPMBController extends Controller {
 			//if ($mime_type=='image/png' || $mime_type=='image/jpg'){
 				$nama_gambar = $request->file('gambar')->getClientOriginalName();
 				$request->file('gambar')->move('storage/images/banksoal',$nama_gambar);
-				$soal->gambar="storage/images/banksoal/$nama_gambar";
+				$soal->gambar="images/banksoal/$nama_gambar";
 				$soal->save();
 			//}
 		}
@@ -297,7 +297,7 @@ class SoalPMBController extends Controller {
 						$gambar->move($folder,$file_name);    
 
 
-						$soal->gambar="storage/images/banksoal/$file_name";
+						$soal->gambar="images/banksoal/$file_name";
 						$soal->save();
 					}
 				}
