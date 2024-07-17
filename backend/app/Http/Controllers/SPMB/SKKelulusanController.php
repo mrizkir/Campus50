@@ -155,7 +155,7 @@ class SKKelulusanController extends Controller {
 				$headers=[					
 					'HEADER_KOP_SURAT'=>Helper::public_path("images/headers/headerreport.png")
 				];		
-				$pdf = \Meneses\LaravelMpdf\Facades\LaravelMpdf::loadView('spmb.ReportSKKelulusan',
+				$pdf = \Mccarlosen\LaravelMpdf\Facades\LaravelMpdf::loadView('spmb.ReportSKKelulusan',
 					[
 						'headers'=>$headers,
 						'nomor_surat'=>$nomor_surat,

@@ -493,7 +493,7 @@ class KRSController extends Controller
                 'HEADER_4'=>$config['HEADER_4'],
                 'HEADER_LOGO'=>\App\Helpers\Helper::public_path("images/logo.png")
             ];
-            $pdf = \Meneses\LaravelMpdf\Facades\LaravelMpdf::loadView('report.ReportKRS',
+            $pdf = \Mccarlosen\LaravelMpdf\Facades\LaravelMpdf::loadView('report.ReportKRS',
                                                                     [
                                                                         'headers'=>$headers,
                                                                         'data_krs'=>$krs,
