@@ -90,7 +90,7 @@ class TransaksiController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'transaksi'=>$daftar_transaksi,                                                                                                                                   
                                     'message'=>'Fetch data daftar transaksi berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * digunakan untuk mendapatkan detail transaksi
@@ -114,7 +114,7 @@ class TransaksiController extends Controller {
                                         'transaksi'=>$transaksi,                                                                                                                                   
                                         'transaksi_detail'=>$transaksi_detail,                                                                                                                                   
                                         'message'=>"Fetch data transaksi dengan id ($id) berhasil diperoleh."
-                                    ],200); 
+                                    ], 200); 
         }
     }      
     public function sppmhsbaru (Request $request,$id)
@@ -153,7 +153,7 @@ class TransaksiController extends Controller {
                 // 'status_transaksi'=>$spp->status,  
                 'spp'=>$spp,                                                                                                                                   
                 'message'=>'SPP Mahasiswa Baru berhasil DIPEROLEH.'
-            ],200); 
+            ], 200); 
         }
         catch (Exception $e)
         {
@@ -210,7 +210,7 @@ class TransaksiController extends Controller {
                                         'pid'=>'update',  
                                         'transaksi_id'=>$transaksi_id,                                                                                                                                   
                                         'message'=>'Kode billing dengan ID ('.$transaksi->no_transaksi.') berhasil DIBATALKAN.'
-                                    ],200); 
+                                    ], 200); 
         }
         
     }
@@ -293,7 +293,7 @@ class TransaksiController extends Controller {
                                         'status'=>1,
                                         'pid'=>'update',                                          
                                         'message'=>"Mengubah data status konfirmasi dengan id ($id) berhasil."                                        
-                                    ],200);   
+                                    ], 200);   
         }
         
     }

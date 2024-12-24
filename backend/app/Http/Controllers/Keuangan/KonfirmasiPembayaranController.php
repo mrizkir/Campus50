@@ -105,7 +105,7 @@ class KonfirmasiPembayaranController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'transaksi'=>$daftar_transaksi,                                                                                                                                   
                                     'message'=>'Fetch data daftar transaksi berhasil.'
-                                ],200);     
+                                ], 200);     
     }  
     public function show(Request $request,$id)
     {
@@ -145,7 +145,7 @@ class KonfirmasiPembayaranController extends Controller {
                                         'pid'=>'fetchdata',  
                                         'konfirmasi'=>$konfirmasi,                                                                                                                                   
                                         'message'=>'Fetch data detail konfirmasi berhasil.'
-                                    ],200);     
+                                    ], 200);     
         }
     }
     public function store(Request $request)
@@ -197,7 +197,7 @@ class KonfirmasiPembayaranController extends Controller {
                                         'pid'=>'store',
                                         'konfirmasi'=>$konfirmasi,                
                                         'message'=>"Konfirmasi pembayaran untuk kode_billing ('.$transaksi->no_transaksi.')   berhasil diupload"
-                                    ],200);  
+                                    ], 200);  
         }      
         else
         {
@@ -235,7 +235,7 @@ class KonfirmasiPembayaranController extends Controller {
                                         'status'=>1,
                                         'pid'=>'update',                                          
                                         'message'=>"Mengubah data konfirmasi dengan id ($id) berhasil."                                        
-                                    ],200);   
+                                    ], 200);   
         }
         
     }

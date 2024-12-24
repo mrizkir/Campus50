@@ -52,7 +52,7 @@ class TransaksiController extends Controller {
                                             'status'=>'14',
                                             'message'=>"request KODE_BILLING ($kode_billing) tidak sesuai"
                                         ]
-                                    ],200);
+                                    ], 200);
         }
         else if ($transaksi->status==1)
         {
@@ -60,7 +60,7 @@ class TransaksiController extends Controller {
                                         'status'=>'88',
                                         'message'=>"Tagihan sudah dibayarkan tanggal: ".$transaksi->updated_at_konfirm
                                     ]
-                                ],200);
+                                ], 200);
         }
         else if ($transaksi->status==2)
             {
@@ -68,7 +68,7 @@ class TransaksiController extends Controller {
                                             'status'=>'88',
                                             'message'=>"status kode billing ini dibatalkan"
                                         ]
-                                    ],200);
+                                    ], 200);
             }
         else
         {
@@ -113,7 +113,7 @@ class TransaksiController extends Controller {
                     'message'=>"Format request tidak sesuai",
                     'errors'=>$validator->customMessages
                 ]
-            ],200);
+            ], 200);
         }
         else
         {
@@ -150,7 +150,7 @@ class TransaksiController extends Controller {
                                                 'message'=>"Tagihan sudah dibayarkan tanggal: ".\App\Helpers\Helper::tanggal('d/m/Y H:i:s',$transaksi->updated_at_konfirm),
                                                 'noref'=>$transaksi->no_faktur
                                             ]
-                                        ],200);
+                                        ], 200);
             }
             else if ($transaksi->status==2)
             {
@@ -158,7 +158,7 @@ class TransaksiController extends Controller {
                                                 'status'=>'88',
                                                 'message'=>"status kode billing ini dibatalkan"
                                             ]
-                                        ],200);
+                                        ], 200);
             }
             else if ($transaksi->total!=$request->input('amount'))
             {
@@ -166,7 +166,7 @@ class TransaksiController extends Controller {
                                             'status'=>'11',
                                             'message'=>'Nilai nominal salah ('.\App\Helpers\Helper::formatUang($request->input('amount')).') karena  tidak sama dengan dengan transaksi '.\App\Helpers\Helper::formatUang($transaksi->total)
                                         ]
-                                    ],200);
+                                    ], 200);
             }
             else
             {

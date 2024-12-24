@@ -45,7 +45,7 @@ class UsersDosenController extends Controller {
                                 'pid'=>'fetchdata',                                
                                 'users'=>$data,
                                 'message'=>'Fetch data users Dosen berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
     }  
     public function pengampu (Request $request)
     {
@@ -63,7 +63,7 @@ class UsersDosenController extends Controller {
                                 'pid'=>'fetchdata',                                
                                 'dosen'=>$data,
                                 'message'=>'Fetch data Dosen Pengampu berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
     }  
     /**
      * Store a newly created resource in storage.
@@ -138,7 +138,7 @@ class UsersDosenController extends Controller {
                                     'pid'=>'store',
                                     'user'=>$user,                                    
                                     'message'=>'Data user Dosen berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -229,7 +229,7 @@ class UsersDosenController extends Controller {
                                     'pid'=>'update',
                                     'user'=>$user,      
                                     'message'=>'Data user Dosen '.$user->username.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
         else
         {
@@ -277,7 +277,7 @@ class UsersDosenController extends Controller {
                                     'pid'=>'fetchdata',                                    
                                     'biodatadiri'=>$biodatadiri,      
                                     'message'=>'Data Biodata Diri Dosen '.$biodatadiri->username.' berhasil diperoleh.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -360,7 +360,7 @@ class UsersDosenController extends Controller {
                                     'user'=>$user,      
                                     'biodatadiri'=>$biodatadiri,      
                                     'message'=>'Biodata diri Dosen '.$user->username.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -400,7 +400,7 @@ class UsersDosenController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"User Dosen ($username) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

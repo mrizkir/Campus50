@@ -112,7 +112,7 @@ class TransaksiRegistrasiKRSController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'transaksi'=>$daftar_transaksi,                                                                                                                                   
                                     'message'=>'Fetch data daftar transaksi berhasil.'
-                                ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);
+                                ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);
     }
     /**
      * buat transaksi baru
@@ -216,7 +216,7 @@ class TransaksiRegistrasiKRSController extends Controller {
                                         'pid'=>'store',                   
                                         'transaksi'=>$transaksi,                                                                                                                                   
                                         'message'=>'Transaksi Registrasi KRS berhasil di input.'
-                                    ],200); 
+                                    ], 200); 
         }
         catch (Exception $e)
         {
@@ -263,7 +263,7 @@ class TransaksiRegistrasiKRSController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"transaksi registrasi dengan id ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
         else
         {

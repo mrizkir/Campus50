@@ -91,7 +91,7 @@ class JadwalUjianPMBController extends Controller {
                                     'jadwal_ujian'=>$jadwal_ujian,      
                                     'jumlah_bank_soal'=>$jumlah_bank_soal,                                                                                                                             
                                     'message'=>'Fetch data jadwal ujian pmb berhasil.'
-                                ],200);     
+                                ], 200);     
     }  
     /**
      * simpan jadwal ujian baru
@@ -131,7 +131,7 @@ class JadwalUjianPMBController extends Controller {
                                     'pid'=>'store',
                                     'jadwal_ujian'=>$jadwal_ujian,                                                                                                                                 
                                     'message'=>'Data jadwal ujian berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
     }
     /**
      * detail jadwal ujian pmb
@@ -156,7 +156,7 @@ class JadwalUjianPMBController extends Controller {
                                         'pid'=>'fetchdata',                                          
                                         'jadwal_ujian'=>$jadwal_ujian,                                                                                                                                                                                                                                                                                                                                              
                                         'message'=>"Fetch data jadwal ujian pmb dengan id ($id) berhasil diperoleh."
-                                    ],200); 
+                                    ], 200); 
         }
         else
         {
@@ -194,7 +194,7 @@ class JadwalUjianPMBController extends Controller {
                                         'jadwal_ujian'=>$jadwal_ujian,                                                                                                                                                                                                                                                                                                           
                                         'peserta'=>$peserta,                                                                                                                                                                                                                                                                                                           
                                         'message'=>"Fetch data jadwal ujian pmb dengan id ($id) berhasil diperoleh."
-                                    ],200);     
+                                    ], 200);     
         }
     } 
     /**
@@ -241,7 +241,7 @@ class JadwalUjianPMBController extends Controller {
                                         'pid'=>'update',  
                                         'jadwal_ujian'=>$jadwal_ujian,                                                                                                                                                                                                                                                                                                                                                    
                                         'message'=>"Mengubah data jadwal ujian pmb dengan id ($id) berhasil."                                        
-                                    ],200);    
+                                    ], 200);    
         }
     }     
     /**
@@ -284,7 +284,7 @@ class JadwalUjianPMBController extends Controller {
                                         'pid'=>'update',  
                                         'jadwal_ujian'=>$jadwal_ujian,                                                                                                                                                                                                                                                                                                                                                    
                                         'message'=>"ujian pmb dengan id ($id) berhasil dimulai."                                        
-                                    ],200);    
+                                    ], 200);    
         }
     }
 
@@ -324,7 +324,7 @@ class JadwalUjianPMBController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Jadwal Ujian PMB ($nama_kegiatan) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     } 

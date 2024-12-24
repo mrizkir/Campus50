@@ -56,7 +56,7 @@ class KemahasiswaanDaftarMahasiswaController  extends Controller
                                     'pid'=>'fetchdata',  
                                     'mahasiswa'=>$data,                                                                                                                                   
                                     'message'=>'Fetch data daftar mahasiswa berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * cetak ke excel

@@ -28,7 +28,7 @@ class ZoomController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'zoom'=>$zoom,                                                                                                                                   
                                     'message'=>'Fetch data account zoom berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * Store a newly created resource in storage.
@@ -68,7 +68,7 @@ class ZoomController extends Controller {
                                     'pid'=>'store',
                                     'zoom'=>$zoom,                                    
                                     'message'=>'Data account zoom berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }   
     /**
@@ -147,7 +147,7 @@ class ZoomController extends Controller {
                     'pid'=>'store',
                     'zoom'=>$zoom,                                    
                     'message'=>'Data account zoom berhasil di synchronize.'
-                ],200); 
+                ], 200); 
             }
             catch(\GuzzleHttp\Exception\ClientException $e)
             {
@@ -230,7 +230,7 @@ class ZoomController extends Controller {
                                     'pid'=>'update',
                                     'zoom'=>$zoom,      
                                     'message'=>'Data account zoom '.$zoom->email.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }   
     /**
@@ -261,7 +261,7 @@ class ZoomController extends Controller {
                                     'pid'=>'fetchdata',
                                     'zoom'=>$zoom,      
                                     'message'=>'Data account zoom '.$zoom->email.' berhasil diperoleh.'
-                                ],200); 
+                                ], 200); 
         }
     }   
     /**
@@ -297,7 +297,7 @@ class ZoomController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Account zoom dengan id ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

@@ -39,7 +39,7 @@ class NilaiMatakuliahController extends Controller
                                     'pid'=>'fetchdata',  
                                     'daftar_nilai'=>$daftar_nilai,                                                                                                                                   
                                     'message'=>'Fetch data penyelenggaraan matakuliah berhasil.'
-                                ],200); 
+                                ], 200); 
     }
     public function pesertakelas (Request $request,$id)
     {
@@ -80,7 +80,7 @@ class NilaiMatakuliahController extends Controller
                                 'pid'=>'fetchdata',                                                                                         
                                 'peserta'=>$peserta,                                            
                                 'message'=>"Daftar Peserta MHS dari Kelas MHS dengan id ($id) berhasil diperoleh."
-                            ],200);
+                            ], 200);
         }
     }
     public function perkrs (Request $request,$id)
@@ -146,7 +146,7 @@ class NilaiMatakuliahController extends Controller
                                     'jumlah_matkul'=>$daftar_matkul->count(),                                                                                                                                   
                                     'jumlah_sks'=>$daftar_matkul->sum('sks'),                                                                                                                                   
                                     'message'=>'Fetch data krs dan detail krs mahasiswa berhasil diperoleh' 
-                                ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
+                                ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
     }
     public function storeperkrs(Request $request)
     {
@@ -253,6 +253,6 @@ class NilaiMatakuliahController extends Controller
                                     'pid'=>'store', 
                                     'daftar_nilai'=>$daftar_nilai,                                     
                                     'message'=>"Nilai ($jumlah_matkul) matakuliah telah tersimpan dengan berhasil" 
-                                ],200);     
+                                ], 200);     
     }
 }

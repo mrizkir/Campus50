@@ -41,7 +41,7 @@ class BiayaKomponenPeriodeController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'kombi'=>$kombi,                                                                                                                                   
                                     'message'=>'Fetch data biaya komponen periode berhasil.'
-                                ],200);     
+                                ], 200);     
     } 
     /**
      * digunakan untuk meload daftar kombi pertama kali atau selanjutnya ke table pe3_kombi_periode
@@ -85,7 +85,7 @@ class BiayaKomponenPeriodeController extends Controller {
                                     'pid'=>'store',  
                                     'kombi'=>$kombi,                                                                                                                                   
                                     'message'=>'Menyalin data kombi ke data kombi periode berhasil.'
-                                ],200);     
+                                ], 200);     
     } 
     /**
      * digunakan untuk merubah biaya komponen
@@ -117,6 +117,6 @@ class BiayaKomponenPeriodeController extends Controller {
                                     'pid'=>'update',     
                                     'kombi_biaya'=>$kombi_biaya,                                                                                                                                                               
                                     'message'=>'Mengubah biaya komponen '.$kombi_biaya->nama_kombi.' berhasil.'
-                                ],200);     
+                                ], 200);     
     } 
 }

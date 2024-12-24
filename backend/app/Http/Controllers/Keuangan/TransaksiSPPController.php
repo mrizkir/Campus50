@@ -114,7 +114,7 @@ class TransaksiSPPController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'transaksi'=>$daftar_transaksi,                                                                                                                                   
                                     'message'=>'Fetch data daftar transaksi berhasil.'
-                                ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);    
+                                ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);    
     }
     public function show (Request $request,$id)
     {
@@ -214,7 +214,7 @@ class TransaksiSPPController extends Controller {
                                         'transaksi_detail'=>$transaksi_detail,                                                                                                                                   
                                         'item_selected'=>$item_selected,                                                                                                                                   
                                         'message'=>"Fetch data transaksi dengan id ($id) berhasil diperoleh."
-                                    ],200)->setEncodingOptions(JSON_NUMERIC_CHECK); 
+                                    ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK); 
         }
         catch (Exception $e)
         {
@@ -313,7 +313,7 @@ class TransaksiSPPController extends Controller {
                                         'pid'=>'store',                   
                                         'transaksi'=>$transaksi,                                                                                                                                   
                                         'message'=>'Membuat Transaksi SPP baru berhasil.'
-                                    ],200); 
+                                    ], 200); 
         }
         catch (Exception $e)
         {
@@ -403,7 +403,7 @@ class TransaksiSPPController extends Controller {
                                     'bulan_selected'=>$bulan_selected,                                                                                                                                                                         
                                     'bulan_spp'=>$bulan_spp,                                                                                                                                                                         
                                     'message'=>(count($bulan_spp)).' Bulan SPP telah berhasil ditambahkan'
-                                ],200);  
+                                ], 200);  
     }
     public function destroy (Request $request,$id)
     {
@@ -453,7 +453,7 @@ class TransaksiSPPController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',          
                                         'message' => 'Menghapus Transaksi Detail dengan ID ('.$id.') berhasil'
-                                    ],200);         
+                                    ], 200);         
         }
     }
     private function checkPembayaranSPP ($no_bulan,$tahun,$user_id)

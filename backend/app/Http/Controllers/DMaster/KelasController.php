@@ -21,7 +21,7 @@ class KelasController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'kelas'=>$kelas,                                                                                                                                   
                                     'message'=>'Fetch data kelas berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * Store a newly created resource in storage.
@@ -57,7 +57,7 @@ class KelasController extends Controller {
                                     'pid'=>'store',
                                     'kelas'=>$kelas,                                    
                                     'message'=>'Data kelas berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -135,7 +135,7 @@ class KelasController extends Controller {
                                     'pid'=>'update',
                                     'kelas'=>$kelas,      
                                     'message'=>'Data kelas '.$kelas->nkelas.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }    
     /**
@@ -171,7 +171,7 @@ class KelasController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Kelas dengan kode ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

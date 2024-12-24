@@ -45,7 +45,7 @@ class DosenWaliController extends Controller {
                                 'role'=>$role,
                                 'users'=>$data,
                                 'message'=>'Fetch data dosen wali berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
     }    
     /**
      * Store a newly created resource in storage.
@@ -119,7 +119,7 @@ class DosenWaliController extends Controller {
                                     'pid'=>'store',
                                     'user'=>$user,                                    
                                     'message'=>'Data dosen wali berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -170,7 +170,7 @@ class DosenWaliController extends Controller {
                                     'pid'=>'update',
                                     'user'=>$user,      
                                     'message'=>$message,                                    
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -210,7 +210,7 @@ class DosenWaliController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Dosen Wali ($username) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

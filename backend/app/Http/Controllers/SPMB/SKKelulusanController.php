@@ -36,7 +36,7 @@ class SKKelulusanController extends Controller {
 				'status'=>1,
 				'pid'=>'fetchdata',															
 				'surat_keluar'=>$surat_keluar                        
-			],200);
+			], 200);
 		}
 	}
 	/**
@@ -185,7 +185,7 @@ class SKKelulusanController extends Controller {
 					'status'=>1,
 					'pid'=>'fetchdata',															
 					'pdf_file'=>$pdf_file                        
-				],200);
+				], 200);
 			}
 			else
 			{

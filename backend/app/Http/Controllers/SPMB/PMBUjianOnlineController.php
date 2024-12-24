@@ -83,7 +83,7 @@ class PMBUjianOnlineController extends Controller {
                                     'jawaban'=>$jawaban,
                                     'peserta'=>$peserta,                                                                                                                              
                                     'message'=>'Fetch data soal pmb berhasil.'
-                                ],200);     
+                                ], 200);     
         }        
     }  
     /**
@@ -132,7 +132,7 @@ class PMBUjianOnlineController extends Controller {
                                     'jadwal_ujian'=>$jadwal_ujian,      
                                     'jumlah_bank_soal'=>$jumlah_bank_soal,                                                                                                                             
                                     'message'=>'Fetch data jadwal ujian pmb berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * digunakan untuk mendapatkan profil peserta ujian
@@ -149,7 +149,7 @@ class PMBUjianOnlineController extends Controller {
                                         'jadwal_ujian'=>null, 
                                         'peserta'=>$peserta,
                                         'message'=>'Fetch data peserta ujian pmb gagal, mungkin belum terdaftar.'
-                                    ],200); 
+                                    ], 200); 
         }
         else
         {   
@@ -168,7 +168,7 @@ class PMBUjianOnlineController extends Controller {
                                     'jadwal_ujian'=>$jadwal_ujian,
                                     'nilai'=>$nilai,
                                     'message'=>'Fetch data peserta ujian pmb berhasil.'
-                                ],200);     
+                                ], 200);     
         }
     }
     /**
@@ -204,7 +204,7 @@ class PMBUjianOnlineController extends Controller {
                                     'pid'=>'store',  
                                     'peserta'=>$peserta,
                                     'message'=>'Mendaftarkan peserta ujian pmb ke jadwal ujian berhasil.'
-                                ],200);     
+                                ], 200);     
         }
         else
         {
@@ -234,7 +234,7 @@ class PMBUjianOnlineController extends Controller {
                                 'pid'=>'update',  
                                 'peserta'=>$peserta,
                                 'message'=>'peserta ujian memulai ujian pmb berhasil.'
-                            ],200);
+                            ], 200);
     }
     /**
      * digunakan untuk keluar dari sebuah jadwal ujian
@@ -262,7 +262,7 @@ class PMBUjianOnlineController extends Controller {
                                     'status'=>1,
                                     'pid'=>'destroy',                
                                     'message'=>"Peserta berhasil dihapus dari jadwal ujian ini"
-                                ],200);       
+                                ], 200);       
     
     }
     /**
@@ -300,7 +300,7 @@ class PMBUjianOnlineController extends Controller {
                                         'status'=>1,
                                         'pid'=>'store',                                                                                                                                    
                                         'message'=>'Data Jawaban Ujian berhasil disimpan.'
-                                    ],200); 
+                                    ], 200); 
         }               
     }  
     /**
@@ -319,7 +319,7 @@ class PMBUjianOnlineController extends Controller {
                                 'pid'=>'update',  
                                 'peserta'=>$peserta,
                                 'message'=>'peserta ujian berhasil menyelesaikan ujian pmb.'
-                            ],200);
+                            ], 200);
     }
     public function recalculate(Request $request)
     {
@@ -334,7 +334,7 @@ class PMBUjianOnlineController extends Controller {
                                 'pid'=>'update',  
                                 'peserta'=>$peserta,
                                 'message'=>'peserta ujian berhasil menyelesaikan ujian pmb.'
-                            ],200);
+                            ], 200);
     }
     private function hitungNilaiUjian($user_id)
     {

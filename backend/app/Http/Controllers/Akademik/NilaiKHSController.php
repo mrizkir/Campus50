@@ -100,7 +100,7 @@ class NilaiKHSController extends Controller
                                     'pid'=>'fetchdata',  
                                     'daftar_khs'=>$daftar_khs,                                                                                                                                   
                                     'message'=>'Daftar khs mahasiswa berhasil diperoleh' 
-                                ],200);  
+                                ], 200);  
         
     }
     public function show (Request $request,$id)
@@ -263,7 +263,7 @@ class NilaiKHSController extends Controller
                                         'ipk'=>$ipk,                                                                                                                                   
                                         'ips'=>$ips,                                                                                                                                   
                                         'message'=>'Fetch data khs dan detail khs mahasiswa berhasil diperoleh' 
-                                    ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
+                                    ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
         }        
     }
     
@@ -454,7 +454,7 @@ class NilaiKHSController extends Controller
                                     'pid'=>'fetchdata',
                                     'krs'=>$krs,
                                     'pdf_file'=>$pdf_file                                    
-                                ],200);
+                                ], 200);
         }
     }
 }

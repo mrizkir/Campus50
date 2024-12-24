@@ -45,7 +45,7 @@ class UIController extends Controller {
                                     'identitas'=>$identitas,
                                     'theme'=>$theme,
                                     'message'=>'Fetch data ui untuk front berhasil diperoleh'
-                                ],200);
+                                ], 200);
     }
     /**
      * digunakan untuk mendapatkan setting variabel ui admin
@@ -296,7 +296,7 @@ class UIController extends Controller {
                                         'k_status'=>$k_status,
                                         'theme'=>$theme,
                                         'message'=>'Fetch data ui untuk admin berhasil diperoleh'
-                                    ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);
+                                    ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);
         }
         else
         {

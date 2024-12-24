@@ -43,7 +43,7 @@ class KemahasiswaanController extends Controller {
                                         'status'=>1,
                                         'pid'=>'update',                                                                                                                                     
                                         'message'=>'Status Mahasiswa berhasil diubah.'
-                                    ],200); 
+                                    ], 200); 
         }
     }
 }

@@ -41,7 +41,7 @@ class PMBPassingGradeController extends Controller
                                 'jadwal_ujian'=>$jadwal_ujian,
                                 'passing_grade'=>$data,
                                 'message'=>'Fetch data passing grade ujian pmb berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
         
     }
     /**
@@ -88,7 +88,7 @@ class PMBPassingGradeController extends Controller
                                 'status'=>1,
                                 'pid'=>'fetchdata',                                                                
                                 'message'=>'Data nilai passing grade ujian pmb masing-masing prodi berhasil digenerate'
-                            ],200);  
+                            ], 200);  
     }    
     /**
      * digunakan untuk meload passing grade prodi pertama kali
@@ -115,6 +115,6 @@ class PMBPassingGradeController extends Controller
                                 'pid'=>'fetchdata',                                
                                 'passing_grade'=>$passing,
                                 'message'=>'Data nilai passing grade ujian pmb sudah diubah'
-                            ],200);  
+                            ], 200);  
     }
 }

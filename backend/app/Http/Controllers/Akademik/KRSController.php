@@ -96,7 +96,7 @@ class KRSController extends Controller
                                     'pid'=>'fetchdata',  
                                     'daftar_krs'=>$daftar_krs,                                                                                                                                   
                                     'message'=>'Daftar krs mahasiswa berhasil diperoleh' 
-                                ],200);  
+                                ], 200);  
         
     }
     public function show (Request $request,$id)
@@ -180,7 +180,7 @@ class KRSController extends Controller
                                     'jumlah_matkul'=>$krs->jumlah_matkul_1,                                                                                                                                   
                                     'jumlah_sks'=>$krs->jumlah_sks_1,                                                                                                                                   
                                     'message'=>'Fetch data krs dan detail krs mahasiswa berhasil diperoleh' 
-                                ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
+                                ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);  
         }        
     }
     public function penyelenggaraan (Request $request)
@@ -232,7 +232,7 @@ class KRSController extends Controller
                                     'pid'=>'fetchdata',  
                                     'penyelenggaraan'=>$penyelenggaraan,                                                                                                                                                                       
                                     'message'=>'Fetch data matakuliah yang diselenggarakan dan belum terdaftar di KRS berhasil diperoleh' 
-                                ],200)->setEncodingOptions(JSON_NUMERIC_CHECK);
+                                ], 200)->setEncodingOptions(JSON_NUMERIC_CHECK);
     }
     /**
      * digunakan untul menyimpan krs mahasiswa
@@ -273,7 +273,7 @@ class KRSController extends Controller
                                     'pid'=>'store',  
                                     'krs'=>$krs,                                                                                                                                   
                                     'message'=>'menyimpan krs mahasiswa berhasil'
-                                ],200);  
+                                ], 200);  
     }
     public function storematkul (Request $request)
     {
@@ -311,7 +311,7 @@ class KRSController extends Controller
                                     'status'=>1,
                                     'pid'=>'store',                                                                                                                                                                         
                                     'message'=>(count($daftar_matkul)).' Matakuliah baru telah berhasil ditambahkan'
-                                ],200);  
+                                ], 200);  
     }
     public function cekkrs ($request)
     {
@@ -337,7 +337,7 @@ class KRSController extends Controller
                                     'pid'=>'fetchdata',  
                                     'iskrs'=>$iskrs,                                                                                                                                   
                                     'message'=>'Cek krs mahasiswa'
-                                ],200);  
+                                ], 200);  
 
     }
     /**
@@ -373,7 +373,7 @@ class KRSController extends Controller
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"KRS dengan ID ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }
@@ -410,7 +410,7 @@ class KRSController extends Controller
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message' => 'Menghapus matakuliah KRS dengan id ('.$id.') berhasil'
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }
@@ -515,7 +515,7 @@ class KRSController extends Controller
                                     'pid'=>'fetchdata',
                                     'krs'=>$krs,
                                     'pdf_file'=>$pdf_file                                    
-                                ],200);
+                                ], 200);
         }
     }
 }

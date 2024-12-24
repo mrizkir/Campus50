@@ -53,7 +53,7 @@ class PMBPersyaratanController extends Controller {
                                 'pid'=>'fetchdata',
                                 'persyaratan'=>$data,
                                 'message'=>'Fetch data persyaratancalon mahasiswa baru berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
 
     }
     /**
@@ -99,7 +99,7 @@ class PMBPersyaratanController extends Controller {
                                     'pid'=>'fetchdata',
                                     'persyaratan'=>$persyaratan,      
                                     'message'=>'Persyaratan user PMB '.$user->name.' berhasil diperoleh.'
-                                ],200); 
+                                ], 200); 
         }
     }
     public function upload (Request $request,$id)
@@ -168,7 +168,7 @@ class PMBPersyaratanController extends Controller {
                                             'pid'=>'store',
                                             'persyaratan'=>$persyaratan,                
                                             'message'=>"Persyaratan Mahasiswa baru ($name)  berhasil diupload"
-                                        ],200);    
+                                        ], 200);    
             }
             else
             {
@@ -215,7 +215,7 @@ class PMBPersyaratanController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                                        
                                         'message'=>"Persyaratan Mahasiswa Baru user id ($userid)  berhasil dihapus"
-                                    ],200);
+                                    ], 200);
         }
     }
     public function verifikasipersyaratan(Request $request,$id)
@@ -242,7 +242,7 @@ class PMBPersyaratanController extends Controller {
                                         'pid'=>'update', 
                                         'persyaratan'=>$persyaratan,                                       
                                         'message'=>"Persyaratan Dokumen (".$persyaratan->nama_persyaratan.") berhasil diverifikasi"
-                                    ],200);
+                                    ], 200);
         }
     }
 }

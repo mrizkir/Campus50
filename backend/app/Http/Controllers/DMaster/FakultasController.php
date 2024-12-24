@@ -19,7 +19,7 @@ class FakultasController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'fakultas'=>$fakultas,                                                                                                                                   
                                     'message'=>'Fetch data fakultas berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * Store a newly created resource in storage.
@@ -53,7 +53,7 @@ class FakultasController extends Controller {
                                     'pid'=>'store',
                                     'fakultas'=>$fakultas,                                    
                                     'message'=>'Data fakultas berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -107,7 +107,7 @@ class FakultasController extends Controller {
                                     'pid'=>'update',
                                     'fakultas'=>$fakultas,      
                                     'message'=>'Data fakultas '.$fakultas->username.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -132,7 +132,7 @@ class FakultasController extends Controller {
                                         'pid'=>'fetchdata',  
                                         'programstudi'=>$programstudi,                                                                                                                                   
                                         'message'=>'Fetch data program studi berdasarkan id fakultas berhasil.'
-                                    ],200);     
+                                    ], 200);     
 
         }
     }
@@ -169,7 +169,7 @@ class FakultasController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Fakultas dengan kode ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

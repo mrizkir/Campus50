@@ -45,7 +45,7 @@ class DulangController extends Controller
                                     'pid'=>'fetchdata',  
                                     'daftar_dulang'=>$daftar_dulang,                                                                                                                                   
                                     'message'=>'daftar dulang mahasiswa yang tidak ada di KRS dengan status aktif berhasil diperoleh'
-                                ],200);  
+                                ], 200);  
     }
     /**
      * cek apakah mahasiswa telah melakukan daftar ulang
@@ -75,7 +75,7 @@ class DulangController extends Controller
                                     'pid'=>'fetchdata',  
                                     'isdulang'=>$isdulang,                                                                                                                                   
                                     'message'=>'Cek dulang mahasiswa'
-                                ],200);  
+                                ], 200);  
     }
     /**
      * Remove the specified resource from storage.
@@ -112,7 +112,7 @@ class DulangController extends Controller
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Daftar Ulang dengan kode ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

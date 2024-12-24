@@ -307,7 +307,7 @@ class MatakuliahController extends Controller {
 										'status'=>1,
 										'pid'=>'destroy',                
 										'message'=>"matakuliah dengan kode ($id) berhasil dihapus"
-									],200);         
+									], 200);         
 		}
 				  
 	}

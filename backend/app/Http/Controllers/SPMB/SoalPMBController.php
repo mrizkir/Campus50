@@ -219,7 +219,7 @@ class SoalPMBController extends Controller {
 									'pid'=>'store',
 									'soal'=>$soal,                                                                                                                                 
 									'message'=>'Data soal berhasil disimpan.'
-								],200); 
+								], 200); 
 	}
 	/**
 	 * daftar soal
@@ -246,7 +246,7 @@ class SoalPMBController extends Controller {
 										'soal'=>$soal,   
 										'jawaban'=>$jawaban,                                                                                                                                                                                                                                                                                                           
 										'message'=>"Fetch data soal pmb dengan id ($id) berhasil diperoleh."
-									],200);     
+									], 200);     
 		}
 	} 
 	/**
@@ -307,7 +307,7 @@ class SoalPMBController extends Controller {
 										'pid'=>'update',  
 										'soal'=>$soal,                                                                                                                                                                                                                                                                                                                                                    
 										'message'=>"Mengubah data soal pmb dengan id ($id) berhasil."                                        
-									],200);    
+									], 200);    
 		}
 	} 
 	 /**
@@ -351,7 +351,7 @@ class SoalPMBController extends Controller {
 										'status'=>1,
 										'pid'=>'destroy',                
 										'message'=>"Soal Ujian PMB ($nama_soal) berhasil dihapus"
-									],200);         
+									], 200);         
 		}
 				  
 	} 

@@ -48,7 +48,7 @@ class ProgramStudiController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'prodi'=>$prodi,                                                                                                                                   
                                     'message'=>'Fetch data program studi berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     /**
      * Store a newly created resource in storage.
@@ -113,7 +113,7 @@ class ProgramStudiController extends Controller {
                                     'pid'=>'store',
                                     'prodi'=>$prodi,                                    
                                     'message'=>'Data program studi berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -127,7 +127,7 @@ class ProgramStudiController extends Controller {
                                     'pid'=>'fetchdata',
                                     'jenjangstudi'=>$jenjangstudi,                                    
                                     'message'=>'Jenjang studi berhasil diperoleh.'
-                                ],200);
+                                ], 200);
     }
     /**
      * ubah kaprodi
@@ -161,7 +161,7 @@ class ProgramStudiController extends Controller {
                                     'pid'=>'update',
                                     'prodi'=>$prodi,      
                                     'message'=>'Konfigurasi program studi '.$prodi->nama_prodi.' berhasil disimpan.'
-                                ],200);
+                                ], 200);
         }
     }
     /**
@@ -292,7 +292,7 @@ class ProgramStudiController extends Controller {
                                     'pid'=>'update',
                                     'prodi'=>$prodi,      
                                     'message'=>'Data program studi '.$prodi->nama_prodi.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -317,7 +317,7 @@ class ProgramStudiController extends Controller {
                                         'pid'=>'fetchdata',  
                                         'programstudi'=>$programstudi,                                                                                                                                   
                                         'message'=>'Fetch data program studi berdasarkan id program studi berhasil.'
-                                    ],200);     
+                                    ], 200);     
 
         }
     }
@@ -354,7 +354,7 @@ class ProgramStudiController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Program Studi dengan kode ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

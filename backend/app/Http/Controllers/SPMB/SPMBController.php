@@ -178,7 +178,7 @@ class SPMBController extends Controller
                                 'total_tidak_lulus'=>$total_tidak_lulus,
 
                                 'message'=>'Fetch data dashboard pmb berhasil diperoleh'
-                            ],200);    
+                            ], 200);    
         
     }
 }

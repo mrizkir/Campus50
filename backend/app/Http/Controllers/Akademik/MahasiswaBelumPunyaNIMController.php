@@ -56,7 +56,7 @@ class MahasiswaBelumPunyaNIMController extends Controller
                                     'pid'=>'fetchdata',  
                                     'mahasiswa'=>$data,                                                                                                                                   
                                     'message'=>'Fetch data calon mahasiswa baru yang belum punya nim berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     public function store(Request $request)
     {
@@ -135,7 +135,7 @@ class MahasiswaBelumPunyaNIMController extends Controller
                                     'pid'=>'store',      
                                     'mahasiswa'=>$mahasiswa,                                
                                     'message'=>'Daftar Ulang Mahasiswa telah berhasil.'
-                                ],200);     
+                                ], 200);     
     }
 }
 

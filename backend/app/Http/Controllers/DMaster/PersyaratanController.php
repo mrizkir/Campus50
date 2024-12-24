@@ -24,7 +24,7 @@ class PersyaratanController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'persyaratan'=>$persyaratan,                                                                                                                                   
                                     'message'=>'Fetch data persyaratan berhasil.'
-                                ],200);     
+                                ], 200);     
     }    
      /**
      * Store a newly created resource in storage.
@@ -61,7 +61,7 @@ class PersyaratanController extends Controller {
                                     'pid'=>'store',
                                     'persyaratan'=>$persyaratan,                                    
                                     'message'=>'Data persyaratan berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -120,7 +120,7 @@ class PersyaratanController extends Controller {
                                 'pid'=>'store',  
                                 'persyaratan'=>$persyaratan,                                                                                                                                   
                                 'message' => "Menyalin data persyaratan dari tahun $dari_tahun_pendaftaran ke $id berhasil."
-                            ],200);    
+                            ], 200);    
     }
     /**
      * daftar persyaratan dari sebuah proses 
@@ -161,7 +161,7 @@ class PersyaratanController extends Controller {
                                     'pid'=>'fetchdata',  
                                     'persyaratan'=>$persyaratan,                                                                                                                                   
                                     'message'=>"Fetch data persyaratan $id berhasil diperoleh."
-                                ],200);     
+                                ], 200);     
 
 
     }
@@ -199,7 +199,7 @@ class PersyaratanController extends Controller {
                                     'pid'=>'update',
                                     'persyaratan'=>$persyaratan,      
                                     'message'=>'Data persyaratan '.$persyaratan->nama_persyaratan.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -235,7 +235,7 @@ class PersyaratanController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"Persyaratan dengan kode ($id) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

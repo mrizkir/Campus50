@@ -31,7 +31,7 @@ class UsersProdiController extends Controller {
                                 'role'=>$role,
                                 'users'=>$data,
                                 'message'=>'Fetch data users PROGRAM STUDI berhasil diperoleh'
-                            ],200);  
+                            ], 200);  
     }    
     /**
      * Store a newly created resource in storage.
@@ -147,7 +147,7 @@ class UsersProdiController extends Controller {
                                     'pid'=>'store',
                                     'user'=>$user,                                    
                                     'message'=>'Data user PROGRAM STUDI berhasil disimpan.'
-                                ],200); 
+                                ], 200); 
 
     }
     /**
@@ -174,7 +174,7 @@ class UsersProdiController extends Controller {
                                     'user'=>$user,  
                                     'role_dosen'=>$user->hasRole('dosen'),    
                                     'message'=>'Data user '.$user->username.' berhasil diperoleh.'
-                                ],200); 
+                                ], 200); 
         }
 
     }
@@ -335,7 +335,7 @@ class UsersProdiController extends Controller {
                                     'pid'=>'update',
                                     'user'=>$user,      
                                     'message'=>'Data user PROGRAM STUDI '.$user->username.' berhasil diubah.'
-                                ],200); 
+                                ], 200); 
         }
     }
     /**
@@ -375,7 +375,7 @@ class UsersProdiController extends Controller {
                                         'status'=>1,
                                         'pid'=>'destroy',                
                                         'message'=>"User PROGRAM STUDI ($username) berhasil dihapus"
-                                    ],200);         
+                                    ], 200);         
         }
                   
     }

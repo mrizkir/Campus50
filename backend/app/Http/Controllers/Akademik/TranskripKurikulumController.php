@@ -48,7 +48,7 @@ class TranskripKurikulumController  extends Controller
                                     'pid'=>'fetchdata',  
                                     'mahasiswa'=>$data,                                                                                                                                   
                                     'message'=>'Fetch data daftar mahasiswa berhasil.'
-                                ],200);     
+                                ], 200);     
     }
     public function show(Request $request,$id)
     {
@@ -193,7 +193,7 @@ class TranskripKurikulumController  extends Controller
                                     'jumlah_m'=>$jumlah_m,              
                                     'ipk'=>$ipk,
                                     'message'=>"Transkrip Nilai ($id) berhasil dihapus"
-                                ],200); 
+                                ], 200); 
         }
     }
     public function printpdf(Request $request,$id)
@@ -404,7 +404,7 @@ class TranskripKurikulumController  extends Controller
                                     'pid'=>'fetchdata',
                                     'mahasiswa'=>$mahasiswa,
                                     'pdf_file'=>$pdf_file                                    
-                                ],200);
+                                ], 200);
         }
     }
 }
